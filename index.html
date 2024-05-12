@@ -1,0 +1,359 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clara Technologies Corp.</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<div class="navbar">
+  <a href="#home">Home</a>
+  <a href="#software">Our software</a>
+  <a href="#development">Future development</a>
+  <a href="#contacts">Contacts</a>
+  <div class="navbar-right">
+    <button id="loginBtn">Login</button>
+    <button id="registerBtn">Register</button>
+  </div>
+
+  <!-- Registration Success Message -->
+  <div id="notificationBar" style="display: none;"></div>
+  <!-- <div id="registerMessage"></div> Place this right below your navigation bar -->
+  
+  <!-- Registration Modal -->
+  <div id="registerModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Registration Form</h2>
+      <form id="registerForm">
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username" autocomplete="username"><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" autocomplete="email"><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password">
+        <input type="submit" value="Submit">
+      </form> 
+    </div>
+  </div>
+  
+  <!-- Login Modal -->
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Login Form</h2>
+      <form id="loginForm">
+        <label for="loginUsername">Username:</label><br>
+        <input type="text" id="loginUsername" name="username" autocomplete="username"><br>
+        <label for="loginPassword">Password:</label><br>
+        <input type="password" id="loginPassword" name="password">
+        <a id="forgotPasswordLink" href="#">Forgot Password?</a>
+        <input type="submit" value="Submit">
+      </form> 
+    </div>
+  </div>
+  
+  <!-- Forgot Password Modal -->
+  <div id="forgotPasswordModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Forgot Password</h2>
+      <form id="forgotPasswordForm">
+        <label for="email">Email:</label><br>
+        <input type="email" id="email2" name="email" autocomplete="email">
+        <input type="submit" value="Submit">
+      </form> 
+    </div>
+  </div>
+
+
+
+<!-- Home Section -->
+<section id="home">
+    <div class="home-content">
+      <div class="home-image">
+        <img src="images/homepage.jpg" alt="Clara Technologies">
+      </div>
+      <div class="home-text">
+        <h1>CLARA <br> TECHNOLOGIES CORP.</h1>
+        <p>Clara Technologies Corp. is a provider of IT software designed specifically for Amazon sellers. The software allows Amazon sellers to efficiently manage, launch, and promote their products on their landing pages. It also offers features to control sales and purchases, create and increase customer email lists, and bring traffic through Facebook and other social networks. The software enables users to work with multiple Amazon marketplaces on a single account, create distinctive tabs for different components of their business, and use template widgets or create new ones.</p>
+        <p>Moreover, Clara provides professional services to clients who want to sell their products on Amazon's online marketplace and offers teaching services to clients who want to learn how to list and trade on the Amazon platform themselves.</p>
+        <p>Check out the tools in the "Our software" section and discover Clara's product!</p>
+      </div>
+    </div>
+  </section>
+
+    <!-- Software Section -->
+<section id="software" class="software-section blurred">
+    <div class="scroll-indicator">&#x25BC;</div>
+    <img src="images/software.jpg" alt="Left Image" class="left-image">
+    <div class="content">
+        
+        <h2>OUR SOFTWARE</h2>
+        <p>This software revolutionizes how Amazon sellers manage their operations, providing a seamless interface...</p>
+            <div class="feature-section">
+                <div class="feature-container">
+                <!-- Pair 1 -->
+                <div class="feature-pair">
+                    <div class="feature" id="client-management">
+                        <h3>Client Management</h3>
+                        <ul>
+                            <li>Tailor your marketing and sales strategies more effectively by exporting client lists based on specific purchasing behaviors and spending thresholds.</li>
+                            <li>By facilitating personalized interactions and quick responses, the software helps build stronger relationships with customers, increasing loyalty and repeat purchases</li>
+                            <li>Automation of client management tasks reduces the time and effort you spend on administrative processes, allowing to focus more on strategic business activities.</li>
+                            <li>The tool's flexible client management capabilities scale with the seller's business growth, accommodating an expanding customer base without compromising service quality.</li>
+                            <li>With access to detailed client data, you can make informed decisions that enhance customer satisfaction and drive sales performance</li>
+                        </ul>
+                    </div>
+                    <div class="feature" id="customizable-dashboards">
+                        <h3>Customizable Dashboards</h3>
+                        <ul>
+                            <li>Centralizes diverse data sources into one accessible platform, simplifying the monitoring and analysis of complex datasets.</li>
+                            <li>Offers immediate insights into profitability and product performance, enabling quick decision-making and strategic adjustments.</li>
+                            <li>Streamlines the process of report generation, saving time and ensuring regular updates on key metrics and goals.</li>
+                            <li>You can modify the dashboard to match your unique requirements, enhancing your experience and the utility of displayed information.</li>
+                            <li>By eliminating the need for manual data handling and spreadsheet use, the dashboard increases operational efficiency, allowing sellers to focus more on sales strategies and less on data management.</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Pair 2 -->
+                <div class="feature-pair">
+                    <div class="feature" id="client-management">
+                        <h3>Alert System</h3>
+                        <ul>
+                            <li>Rapid alerts enable you to address marketplace issues as soon as they arise, minimizing potential sales and reputation impacts.</li>
+                            <li>From review tracking to competitive spying, the tool provides extensive monitoring capabilities, ensuring you are fully aware of market dynamics and their position within it.</li>
+                            <li>You can tailor your alert preferences to suit your operational needs, choosing how and when you receive updates.</li>
+                            <li>The integrated cost and profit calculator aids in validating new product ideas and optimizing pricing strategies.</li>
+                            <li>Continuous tracking of changes and competitor activities helps you stay ahead in a highly competitive market./li>
+                        </ul>
+                    </div>
+                    <div class="feature" id="customizable-dashboards">
+                        <h3>Products Manager</h3>
+                        <ul>
+                            <li>Provides in-depth visibility into product stats, enabling sellers to make informed decisions based on comprehensive data analysis.</li>
+                            <li>Streamlines the process of monitoring and managing product performance, saving time and reducing the complexity of handling multiple product listings.</li>
+                            <li>Empowers you with the ability to swiftly adapt strategies based on real-time data and historical performance trends.</li>
+                            <li>Helps in effective inventory management by forecasting needs based on sales velocity and other critical metrics.</li>
+                            <li>By leveraging detailed analytics, you can maintain a competitive edge in the Amazon marketplace through optimized product performance and strategic marketing.</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Pair 3 -->
+                <div class="feature-pair">
+                    <div class="feature" id="client-management">
+                        <h3>Orders Manager</h3>
+                        <ul>
+                            <li>Provides a comprehensive and customizable view of all order details, enhancing management efficiency and customer service responsiveness.</li>
+                            <li>Synchronizes data across various platforms and systems, ensuring consistent and accurate information flow, crucial for multichannel fulfillment.</li>
+                            <li>Aids in reducing storage and capital costs by optimizing inventory and fulfillment processes based on real-time data and forecasts.</li>
+                            <li>Facilitates strategic decision-making with advanced forecasting tools that predict sales trends and inventory needs, aligning with business goals and market demand.</li>
+                            <li>Automates and simplifies essential tasks such as shipment confirmations and refund issuance, saving time and reducing manual errors.</li>
+                        </ul>
+                    </div>
+                    <div class="feature" id="customizable-dashboards">
+                        <h3>Keyword Monitoring</h3>
+                        <ul>
+                            <li>By tracking how products rank for specific keywords and comparing these to competitors, you can optimize your listings to improve visibility and attract more traffic.</li>
+                            <li>Immediate alerts on new reviews and changes allow you to manage your online reputation proactively, addressing issues before they escalate.</li>
+                            <li>Gaining insights into competitors' strategies and customer feedback provides a strategic advantage, allowing to adapt and refine the offerings based on market demands.</li>
+                            <li>Understanding keyword trends and consumer feedback directly aids in product improvements and marketing, which can lead to better sales outcomes.</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Pair 4 -->
+                <div class="feature-pair">
+                    <div class="feature" id="client-management">
+                        <h3>Review Requester</h3>
+                        <ul>
+                            <li>By automating review requests, you can consistently collect feedback without manual effort, enhancing product visibility and credibility.</li>
+                            <li>All reviews are aggregated in one place, making it easier to manage and respond to customer feedback efficiently.</li>
+                            <li>The auto-responder ensures timely responses to customer inquiries, even when you are not immediately available, improving the overall customer service experience.</li>
+                            <li>Advanced search and reporting tools help you to analyze feedback trends and focus your attention on areas needing improvement or reinforcement.</li>
+                        </ul>
+                    </div>
+                    <div class="feature" id="customizable-dashboards">
+                        <h3>Email Automation</h3>
+                        <ul>
+                            <li>Personalized email campaigns increase relevance and engagement, fostering a stronger connection with the customer base.</li>
+                            <li>Automated workflows and CRM integration save time and reduce the complexity of managing email campaigns.</li>
+                            <li>A/B testing and detailed customization options allow users to optimize their emails for better open rates and overall effectiveness.</li>
+                            <li>Tailored follow-up messages with promotional content encourage repeat purchases and enhance customer loyalty.</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Pair 5 -->
+                <div class="feature-pair">
+                    <div class="feature" id="client-management">
+                        <h3>QR Code Generator</h3>
+                        <ul>
+                            <li>Customized QR codes strengthen brand recognition and consistency across all marketing materials.</li>
+                            <li>The ability to update QR codes dynamically reduces errors and extends their usability over multiple campaigns.</li>
+                            <li>Generate multiple QR codes for different purposes without additional costs, from promotional materials to event tickets.</li>
+                            <li>Engage customers more effectively by linking QR codes to exclusive offers, product details, or interactive content.</li>
+                        </ul>
+                    </div>
+                    <div class="feature" id="customizable-dashboards">
+                        <h3>Keyword Finder</h3>
+                        <ul>
+                            <li>By utilizing trending and niche keywords, you can significantly improve the visibility of their products on Amazon.</li>
+                            <li>Strategic keyword usage aligns products with what customers are actively searching for, enhancing the likelihood of conversions.</li>
+                            <li>Optimize PPC campaigns with precise keyword targeting, reducing wasted ad spend and increasing return on investment.</li>
+                            <li>Leverage keyword insights to choose products that are more likely to succeed in the current market environment.</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Pair 6 -->
+                <div class="feature-pair">
+                    <div class="feature" id="client-management">
+                        <h3>ASIN Lookup</h3>
+                        <ul>
+                            <li>By understanding which keywords are successful for competitors, you can adjust your own listings to improve visibility and competitiveness on Amazon.</li>
+                            <li>Insights from the tool guide sellers in crafting more effective PPC campaigns and other marketing efforts based on data-driven keyword strategies.</li>
+                            <li>Saves time and resources by automating the process of keyword discovery and analysis, allowing sellers to focus on other aspects of business growth.</li>
+                            <li>Provides a foundation for making informed decisions about product listings and advertising strategies, ultimately helping to boost sales and market share.</li>
+                        </ul>
+                    </div>
+                    <div class="feature" id="customizable-dashboards">
+                        <h3>ASIN Spy</h3>
+                        <ul>
+                            <li>Understand and capitalize on the shortcomings of competitors by monitoring key metrics and market reactions.</li>
+                            <li>Use customer sentiment and feedback trends to refine product features and address market demands.</li>
+                            <li>Prevent negative feedback by receiving alerts on negative reviews and sentiment, allowing for timely and effective responses.</li>
+                            <li>Review up to three months of historical data to identify trends and inform future decisions.</li>
+                            <li>Leverage detailed analytics and alerts to make informed decisions that align with market trends and consumer preferences.</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Pair 7 -->
+                <div class="feature-pair">
+                    <div class="feature" id="client-management">
+                        <h3>Costumer Segmentation</h3>
+                        <ul>
+                            <li>By understanding the specific needs and preferences of different customer segments, businesses can tailor their marketing efforts more effectively, increasing the relevance and impact of their campaigns.</li>
+                            <li>Personalized marketing approaches that cater to the unique characteristics of each segment are more likely to convert prospects into loyal customers.</li>
+                            <li>Gaining a deeper understanding of customer demographics, behaviors, and psychographics aids in developing products and services that better meet market demands.</li>
+                            <li>Focused marketing strategies allow businesses to allocate their resources more efficiently, maximizing ROI on marketing expenditures.</li>
+                            <li>Access to detailed segmentation data helps companies make informed decisions that align with consumer trends and preferences.</li>
+                        </ul>
+                    </div>
+                    <div class="feature" id="customizable-dashboards">
+                        <h3>Product Segmentation</h3>
+                        <ul>
+                            <li>Enables precise focus on specific product groups, improving oversight and strategic planning.</li>
+                            <li>Access to detailed, real-time data supports more informed, data-driven decisions regarding product development, marketing, and sales strategies.</li>
+                            <li>Streamlines the monitoring process by automatically updating segments with new products, reducing manual workload.</li>
+                            <li>Quick adaptation to market changes through continuous data updates and segment adjustments, ensuring strategies are always aligned with current conditions.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </div>
+    <img src="images/software.jpg" alt="Right Image" class="right-image">
+</section>
+
+
+  
+  <!-- Development Section -->
+<section id="development" class="development-section">
+    <div class="scroll-indicator-development" id="scrollIndicator">&#x25B6;</div>
+    <h2 class="title-section">FUTURE DEVELOPMENT</h2>
+    <p class="transparent-text">In the future, our software will provide a centralized software for eCommerce businesses to manage their products across multiple platforms, such as eBay, Walmart. Clara's Multi channel software will allow the customers to manage their inventory across top eCommerce marketplaces and platforms simultaneously! Clara's Multichannel listing software will have such features:</p>
+    <div class="scroll-container">
+        <div class="box">
+            <h3>Support around 6 eCommerce platforms and 7 marketplaces</h3>        
+            <p>Extensive support for a broad range of eCommerce platforms and marketplaces, accommodating around 6 major eCommerce platforms and 7 key marketplaces...  <button class="moreBtn" data-feature="feature1">more</button></p>
+            
+        </div>
+        <div class="box">
+            <h3>Connect multiple channels at once - all in 1 dashboard</h3>
+            <p>Simplifies the management of eCommerce operations by enabling businesses to connect multiple sales channels to a single, unified dashboard...  <button class="moreBtn" data-feature="feature2">more</button></p>
+        </div>
+        <div class="box">
+            <h3>Use a spreadsheet-style interface to quickly edit listings in bulk</h3>
+            <p>This feature will be designed to facilitate quick and efficient bulk edits, allowing users to update multiple listings simultaneously with just a few clicks...  <button class="moreBtn" data-feature="feature3">more</button></p>
+        </div>
+        <div class="box">        
+            <h3>Make use of templates & recipes to create listings quicker than ever before</h3>
+            <p>Will enable users to generate new listings swiftly and efficiently, surpassing previous speeds...  <button class="moreBtn" data-feature="feature4">more</button></p>
+        </div>
+
+        <div class="box">
+            <h3>Sync data in real-time across sales channels</h3>
+            <p>This feature will ensure that product information, inventory levels, pricing, and other critical data are continuously updated and harmonized across multiple platforms...  <button class="moreBtn" data-feature="feature5">more</button></p>
+        </div>
+        <div class="box">
+            <h3>Import orders from other sales channels into software's main dashboard for better order management</h3>
+            <p>Will streamline operations by consolidating orders from platforms like Amazon, eBay, and Shopify, providing users with a unified view for efficient processing...  <button class="moreBtn" data-feature="feature6">more</button></p>
+        </div>
+        <div class="box">       
+            <h3>Allow integration via Facebook & Google Ads</h3>
+            <p>Will enable businesses to extend their reach and drive targeted traffic to their listings across multiple channels...  <button class="moreBtn" data-feature="feature7">more</button></p>
+        </div>
+        <div class="box">
+            <h3>Effectively manage large quantities of listings and revise existing product information in bulk in just a couple of clicks by grouping similar listing templates together</h3>
+            <p>Will allow users to group similar listing templates together and make bulk revisions with just a few clicks, streamlining the entire process...  <button class="moreBtn" data-feature="feature8">more</button></p>
+        </div>
+        <div class="box">
+            <h3>Manage prices for all of your listings across key sales channels like Amazon, eBay, Shopify, Walmart and others seamlessly with automatic price revision</h3>
+            <p>This feature will enable users to seamlessly adjust prices for all listings with automatic price revision, ensuring consistency and competitiveness across platforms...  <button class="moreBtn" data-feature="feature9">more</button></p>
+        </div>
+        <div class="box">
+            <h3>Match products to eBay and Amazon catalogues</h3>
+            <p>This innovative feature will simplify the listing creation process by automatically associating products with existing catalogues on these popular platforms...  <button class="moreBtn" data-feature="feature10">more</button></p>
+        </div>
+        <div class="box">
+            <h3>Keep track of all listings status and resolve errors that are surfaced in the platform with recommended actions.</h3>
+            <p>This essential feature will ensure that businesses can easily monitor the status of all listings across various sales channels from a centralized dashboard...  <button class="moreBtn" data-feature="feature11">more</button></p>
+        </div>
+        <div class="box">
+            <h3>AI-Powered Pricing Optimization</h3>
+            <p>Designed to help Amazon sellers dynamically adjust product prices based on an array of real-time market factors including competitor pricing, market demand, and desired profit margins...  <button class="moreBtn" data-feature="feature12">more</button></p>
+        </div>
+        <div class="box">
+            <h3>Sustainability Tracking</h3>
+            <p>Designed to assist Amazon sellers in monitoring and managing the environmental impact of their operations...  <button class="moreBtn" data-feature="feature13">more</button></p>
+        </div>
+        <div class="box">
+            <h3>Predictive Analytics for Inventory and Sales</h3>
+            <p>A tool that uses historical sales data and advanced algorithms to forecast future market trends and consumer demands...  <button class="moreBtn" data-feature="feature14">more</button></p>
+        </div>
+    </div>
+    <div id="featureModal" class="modal">
+        <div class="modal-content">
+            <span class="closeBtn">&times;</span>
+            <h3 id="featureTitleModal"></h3>
+            <p id="featureTextModal"></p>
+        </div>
+    </div>
+    
+      
+</section>
+    
+    
+  
+ <!-- Contacts Section -->
+<section id="contacts" class="contacts-section">
+    <div class="contact-content">
+      <img src="images/CONTACTS.jpg" alt="Contact Us">
+      <div class="contact-info-container">
+        <h2>CONTACTS</h2>
+        <div class="contact-info">
+          <p>If you have any questions or suggestions, you are more than welcome to contact us, and we will be happy to assist and communicate with you!</p>
+          <p>We are located at 34-11551 Kingfisher Drive, Richmond BC V7E3N5, Canada.</p>
+          <p>Our phone number is +16O4725695O</p>
+          <p>Our e-mail is claracapitalcorp@gmail.com</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <script src="script.js"></script>
+
+</body>
+</html>
