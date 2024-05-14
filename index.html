@@ -6,29 +6,40 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Clara Technologies Corp.</title>
 <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
 <!-- Navigation Bar -->
 <div class="navbar">
-  <a href="#home">Home</a>
-  <a href="#software">Our software</a>
-  <a href="#development">Future development</a>
-  <a href="#contacts">Contacts</a>
-  <div class="navbar-right">
-    <button id="loginBtn">Login</button>
-    <button id="registerBtn">Register</button>
+    <div class="navbar-left">
+      <a href="#home">Home</a>
+      <a href="#software">Our      software</a>
+      <a href="#development">Future development</a>
+      <a href="#contacts">Contacts</a>
+    </div>
+    <div class="navbar-right">
+      <button id="loginBtn">Login</button>
+      <button id="registerBtn">Register</button>
+    </div>
   </div>
+  
 
   <!-- Registration Success Message -->
   <div id="notificationBar" style="display: none;"></div>
-  <!-- <div id="registerMessage"></div> Place this right below your navigation bar -->
+
   
   <!-- Registration Modal -->
   <div id="registerModal" class="modal">
     <div class="modal-content">
       <span class="close">&times;</span>
-      <h2>Registration Form</h2>
+      <h3>Registration Form</h3>
       <form id="registerForm">
         <label for="username">Username:</label><br>
         <input type="text" id="username" name="username" autocomplete="username"><br>
@@ -45,7 +56,7 @@
   <div id="loginModal" class="modal">
     <div class="modal-content">
       <span class="close">&times;</span>
-      <h2>Login Form</h2>
+      <h3>Login Form</h3>
       <form id="loginForm">
         <label for="loginUsername">Username:</label><br>
         <input type="text" id="loginUsername" name="username" autocomplete="username"><br>
@@ -61,7 +72,7 @@
   <div id="forgotPasswordModal" class="modal">
     <div class="modal-content">
       <span class="close">&times;</span>
-      <h2>Forgot Password</h2>
+      <h3>Forgot Password</h3>
       <form id="forgotPasswordForm">
         <label for="email">Email:</label><br>
         <input type="email" id="email2" name="email" autocomplete="email">
@@ -75,28 +86,40 @@
 <!-- Home Section -->
 <section id="home">
     <div class="home-content">
-      <div class="home-image">
-        <img src="images/homepage.jpg" alt="Clara Technologies">
-      </div>
-      <div class="home-text">
-        <h1>CLARA <br> TECHNOLOGIES CORP.</h1>
-        <p>Clara Technologies Corp. is a provider of IT software designed specifically for Amazon sellers. The software allows Amazon sellers to efficiently manage, launch, and promote their products on their landing pages. It also offers features to control sales and purchases, create and increase customer email lists, and bring traffic through Facebook and other social networks. The software enables users to work with multiple Amazon marketplaces on a single account, create distinctive tabs for different components of their business, and use template widgets or create new ones.</p>
+      <!-- Wrapper for image and text for better control -->
+      <div class="home-wrapper">
+        <div class="home-image">
+          <img src="images/homepage.jpg" alt="Clara Technologies">
+        </div>
+        <div class="home-text">
+            <div class="title-container"> <!-- Newly added container for title -->
+                <h1>CLARA </h1>
+                <h1>TECHNOLOGIES CORP.</h1>
+              </div>
+              <div class="text-container">   
+          <p>Clara Technologies Corp. is a provider of IT software designed specifically for Amazon sellers. The software allows Amazon sellers to efficiently manage, launch, and promote their products on their landing pages. It also offers features to control sales and purchases, create and increase customer email lists, and bring traffic through Facebook and other social networks. The software enables users to work with multiple Amazon marketplaces on a single account, create distinctive tabs for different components of their business, and use template widgets or create new ones.</p>
         <p>Moreover, Clara provides professional services to clients who want to sell their products on Amazon's online marketplace and offers teaching services to clients who want to learn how to list and trade on the Amazon platform themselves.</p>
         <p>Check out the tools in the "Our software" section and discover Clara's product!</p>
+        </div>
       </div>
     </div>
+</div>
   </section>
+  
+
 
     <!-- Software Section -->
-<section id="software" class="software-section blurred">
-    <div class="scroll-indicator">&#x25BC;</div>
+<section id="software" class="software-section">
     <img src="images/software.jpg" alt="Left Image" class="left-image">
     <div class="content">
         
-        <h2>OUR SOFTWARE</h2>
-        <p>This software revolutionizes how Amazon sellers manage their operations, providing a seamless interface...</p>
+        <h1>OUR SOFTWARE</h1>
+        <p>Chech out the benefits of the tools available in the software - each of
+            them is designed to make your Amazon seller experience better and
+            more convenient!  Log in to use and click to explore them yourself.</p>
             <div class="feature-section">
-                <div class="feature-container">
+                <div class="scroll-indicator">&#x25BC;</div>
+                <div class="feature-container ">
                 <!-- Pair 1 -->
                 <div class="feature-pair">
                     <div class="feature" id="client-management">
@@ -262,12 +285,13 @@
   <!-- Development Section -->
 <section id="development" class="development-section">
     <div class="scroll-indicator-development" id="scrollIndicator">&#x25B6;</div>
-    <h2 class="title-section">FUTURE DEVELOPMENT</h2>
+    <h1 class="title-section">FUTURE DEVELOPMENT</h1>
     <p class="transparent-text">In the future, our software will provide a centralized software for eCommerce businesses to manage their products across multiple platforms, such as eBay, Walmart. Clara's Multi channel software will allow the customers to manage their inventory across top eCommerce marketplaces and platforms simultaneously! Clara's Multichannel listing software will have such features:</p>
+    <div class="dev-blue">
     <div class="scroll-container">
         <div class="box">
             <h3>Support around 6 eCommerce platforms and 7 marketplaces</h3>        
-            <p>Extensive support for a broad range of eCommerce platforms and marketplaces, accommodating around 6 major eCommerce platforms and 7 key marketplaces...  <button class="moreBtn" data-feature="feature1">more</button></p>
+            <p>Extensive support for a broad range of eCommerce platforms and marketplaces, accommodating around 6 major eCommerce platforms...  <button class="moreBtn" data-feature="feature1">more</button></p>
             
         </div>
         <div class="box">
@@ -275,41 +299,41 @@
             <p>Simplifies the management of eCommerce operations by enabling businesses to connect multiple sales channels to a single, unified dashboard...  <button class="moreBtn" data-feature="feature2">more</button></p>
         </div>
         <div class="box">
-            <h3>Use a spreadsheet-style interface to quickly edit listings in bulk</h3>
+            <h3>Bulk-edit listings with spreadsheet interface</h3>
             <p>This feature will be designed to facilitate quick and efficient bulk edits, allowing users to update multiple listings simultaneously with just a few clicks...  <button class="moreBtn" data-feature="feature3">more</button></p>
         </div>
         <div class="box">        
-            <h3>Make use of templates & recipes to create listings quicker than ever before</h3>
+            <h3>Speed up listing creation with templates & recipes</h3>
             <p>Will enable users to generate new listings swiftly and efficiently, surpassing previous speeds...  <button class="moreBtn" data-feature="feature4">more</button></p>
         </div>
 
         <div class="box">
             <h3>Sync data in real-time across sales channels</h3>
-            <p>This feature will ensure that product information, inventory levels, pricing, and other critical data are continuously updated and harmonized across multiple platforms...  <button class="moreBtn" data-feature="feature5">more</button></p>
+            <p>This feature will ensure that product information, inventory levels, and other critical data are continuously updated and harmonized across multiple platforms...  <button class="moreBtn" data-feature="feature5">more</button></p>
         </div>
         <div class="box">
-            <h3>Import orders from other sales channels into software's main dashboard for better order management</h3>
-            <p>Will streamline operations by consolidating orders from platforms like Amazon, eBay, and Shopify, providing users with a unified view for efficient processing...  <button class="moreBtn" data-feature="feature6">more</button></p>
+            <h3>Centralize order management by importing sales from all channels</h3>
+            <p>Will streamline operations by consolidating orders from platforms like Amazon, eBay, and Shopify, providing users with a unified view...  <button class="moreBtn" data-feature="feature6">more</button></p>
         </div>
         <div class="box">       
             <h3>Allow integration via Facebook & Google Ads</h3>
             <p>Will enable businesses to extend their reach and drive targeted traffic to their listings across multiple channels...  <button class="moreBtn" data-feature="feature7">more</button></p>
         </div>
         <div class="box">
-            <h3>Effectively manage large quantities of listings and revise existing product information in bulk in just a couple of clicks by grouping similar listing templates together</h3>
+            <h3>Bulk-manage and update listings quickly with template groups</h3>
             <p>Will allow users to group similar listing templates together and make bulk revisions with just a few clicks, streamlining the entire process...  <button class="moreBtn" data-feature="feature8">more</button></p>
         </div>
         <div class="box">
-            <h3>Manage prices for all of your listings across key sales channels like Amazon, eBay, Shopify, Walmart and others seamlessly with automatic price revision</h3>
-            <p>This feature will enable users to seamlessly adjust prices for all listings with automatic price revision, ensuring consistency and competitiveness across platforms...  <button class="moreBtn" data-feature="feature9">more</button></p>
+            <h3>Automate price management across sales channels</h3>
+            <p>This feature will enable users to seamlessly adjust prices for all listings with automatic price revision, ensuring consistency across platforms...  <button class="moreBtn" data-feature="feature9">more</button></p>
         </div>
         <div class="box">
             <h3>Match products to eBay and Amazon catalogues</h3>
-            <p>This innovative feature will simplify the listing creation process by automatically associating products with existing catalogues on these popular platforms...  <button class="moreBtn" data-feature="feature10">more</button></p>
+            <p>This feature will simplify the listing creation process by automatically associating products with existing catalogues on these popular platforms...  <button class="moreBtn" data-feature="feature10">more</button></p>
         </div>
         <div class="box">
-            <h3>Keep track of all listings status and resolve errors that are surfaced in the platform with recommended actions.</h3>
-            <p>This essential feature will ensure that businesses can easily monitor the status of all listings across various sales channels from a centralized dashboard...  <button class="moreBtn" data-feature="feature11">more</button></p>
+            <h3>Track listing statuses and resolve errors with guided actions</h3>
+            <p>This feature will ensure that businesses can easily monitor the status of all listings across sales channels from a dashboard...  <button class="moreBtn" data-feature="feature11">more</button></p>
         </div>
         <div class="box">
             <h3>AI-Powered Pricing Optimization</h3>
@@ -324,6 +348,7 @@
             <p>A tool that uses historical sales data and advanced algorithms to forecast future market trends and consumer demands...  <button class="moreBtn" data-feature="feature14">more</button></p>
         </div>
     </div>
+</div>
     <div id="featureModal" class="modal">
         <div class="modal-content">
             <span class="closeBtn">&times;</span>
@@ -337,21 +362,28 @@
     
     
   
- <!-- Contacts Section -->
+<!-- Contacts Section -->
 <section id="contacts" class="contacts-section">
     <div class="contact-content">
-      <img src="images/CONTACTS.jpg" alt="Contact Us">
-      <div class="contact-info-container">
-        <h2>CONTACTS</h2>
-        <div class="contact-info">
-          <p>If you have any questions or suggestions, you are more than welcome to contact us, and we will be happy to assist and communicate with you!</p>
-          <p>We are located at 34-11551 Kingfisher Drive, Richmond BC V7E3N5, Canada.</p>
-          <p>Our phone number is +16O4725695O</p>
-          <p>Our e-mail is claracapitalcorp@gmail.com</p>
+      <!-- Image Container -->
+      <div class="contact-image-container">
+        <img src="images/CONTACTS.jpg" alt="Contact Us" class="contact-image">
+      </div>
+      <!-- Text Content Container -->
+      <div class="text-content">
+        <h1>CONTACTS</h1>
+        <div class="contact-info-container">
+          <div class="contact-info">
+            <p>If you have any questions or suggestions, you are more than welcome to contact us, and we will be happy to assist and communicate with you!</p>
+            <p>We are located at 34-11551 Kingfisher Drive, Richmond BC V7E3N5, Canada.</p>
+            <p>Our phone number is +16O4725695O</p>
+            <p>Our e-mail is claracapitalcorp@gmail.com</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
+  
   
   <script src="script.js"></script>
 

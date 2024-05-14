@@ -280,3 +280,119 @@ window.onload = function() {
     });
   }); 
 }
+
+
+
+
+window.addEventListener('scroll', function() {
+  // Select the entire navbar
+  const navbar = document.querySelector('.navbar');
+  
+  // Calculate the opacity based on the scroll position
+  const scroll = window.pageYOffset || document.documentElement.scrollTop;
+  let opacity = 1 - scroll / 400; // Adjust the denominator for sensitivity
+  opacity = opacity < 0.5 ? 0.5 : opacity; // Ensures a minimum opacity
+  
+  // Applying the calculated opacity to the navbar
+  navbar.style.opacity = opacity;
+});
+
+
+
+
+
+
+
+
+
+
+
+// BLURRING WITH TEXT
+document.addEventListener('DOMContentLoaded', (event) => {
+  // Check if the .blurred element exists
+  const blurredElement = document.querySelector('.blurred');
+  if (blurredElement) {
+    // Create the overlay container if it does not exist
+    const overlayContainer = document.createElement('div');
+    overlayContainer.style.position = 'absolute';
+    overlayContainer.style.top = '0';
+    overlayContainer.style.left = '0';
+    overlayContainer.style.width = '100%';
+    overlayContainer.style.height = '100%';
+    overlayContainer.style.display = 'flex';
+    overlayContainer.style.justifyContent = 'center';
+    overlayContainer.style.alignItems = 'center';
+    overlayContainer.style.pointerEvents = 'none'; // Allow click events to pass through
+
+    // Create a new DIV element for the overlay message and allow pointer events for it
+    const overlayMessage = document.createElement('div');
+    overlayMessage.textContent = 'Join us to unlock amazing features!'; // Set the text content
+    overlayMessage.style.pointerEvents = 'initial'; // Reactivate pointer events for interaction
+    overlayMessage.style.color = '#fff';
+    overlayMessage.style.fontSize = '24px';
+    overlayMessage.style.textAlign = 'center';
+    overlayMessage.style.padding = '20px';
+    overlayMessage.style.backgroundColor = 'rgba(0,0,0,0.6)';
+    overlayMessage.style.borderRadius = '10px';
+    overlayMessage.style.boxShadow = '0 4px 8px rgba(164, 149, 196, 0.3)';
+    overlayMessage.style.maxWidth = '90%';
+    overlayMessage.style.boxSizing = 'border-box';
+
+    // Append the overlay message to the overlay container
+    overlayContainer.appendChild(overlayMessage);
+
+    // Insert the overlay container right after the blurred element in the DOM
+    blurredElement.parentNode.insertBefore(overlayContainer, blurredElement.nextSibling);
+    
+    // Update the overlayContainer's position to match the .blurred element if it's not positioned
+    const blurredPosition = window.getComputedStyle(blurredElement).position;
+    if (blurredPosition !== 'absolute' && blurredPosition !== 'relative' && blurredPosition !== 'fixed') {
+      blurredElement.style.position = 'relative';
+    }
+    overlayContainer.style.position = 'absolute';
+  }
+});
+
+
+
+
+
+// ARROWS SCROLLING
+document.addEventListener('DOMContentLoaded', () => {
+  const topIndicator = document.querySelector('.scroll-indicator'); 
+  const bottomIndicator = document.querySelector('.scroll-indicator-development'); 
+  const featureContainer = document.querySelector('.feature-container'); 
+  const scrollContainer = document.querySelector('.scroll-container'); 
+
+  if (topIndicator && featureContainer) {
+      topIndicator.addEventListener('click', () => {
+          featureContainer.scrollBy({
+              top: 70,
+              behavior: 'smooth'
+          });
+      });
+  }
+
+  if (bottomIndicator && scrollContainer) {
+      bottomIndicator.addEventListener('click', () => {
+          scrollContainer.scrollBy({
+              left: 70, 
+              behavior: 'smooth'
+          });
+      });
+  }
+});
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
