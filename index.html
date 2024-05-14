@@ -42,12 +42,12 @@
       <h3>Registration Form</h3>
       <form id="registerForm">
         <label for="username">Username:</label><br>
-        <input type="text" id="username" name="username" autocomplete="username"><br>
+        <input type="text" id="username" name="username" autocomplete="username" placeholder="Username should be at least 5 characters long"><br>
         <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" autocomplete="email"><br>
+        <input type="email" id="email" name="email" autocomplete="email" placeholder="Please enter a valid email address"><br>
         <label for="password">Password:</label><br>
-        <input type="password" id="password" name="password">
-        <input type="submit" value="Submit">
+        <input type="password" id="password" name="password" placeholder="Password must be at least 8 characters long">
+        <input type="submit" value="Submit" class="btn-submit">
       </form> 
     </div>
   </div>
@@ -59,11 +59,12 @@
       <h3>Login Form</h3>
       <form id="loginForm">
         <label for="loginUsername">Username:</label><br>
-        <input type="text" id="loginUsername" name="username" autocomplete="username"><br>
+        <input type="text" id="loginUsername" name="username" autocomplete="username" placeholder="Please enter your username"><br>
         <label for="loginPassword">Password:</label><br>
-        <input type="password" id="loginPassword" name="password">
+        <input type="password" id="loginPassword" name="password" placeholder="Please enter your password">
+        <br>
         <a id="forgotPasswordLink" href="#">Forgot Password?</a>
-        <input type="submit" value="Submit">
+        <input type="submit" value="Submit" class="btn-submit">
       </form> 
     </div>
   </div>
@@ -75,8 +76,8 @@
       <h3>Forgot Password</h3>
       <form id="forgotPasswordForm">
         <label for="email">Email:</label><br>
-        <input type="email" id="email2" name="email" autocomplete="email">
-        <input type="submit" value="Submit">
+        <input type="email" id="email2" name="email" autocomplete="email" placeholder="enter your email address">
+        <input type="submit" value="Submit" class="btn-submit">
       </form> 
     </div>
   </div>
@@ -119,7 +120,7 @@
             more convenient!  Log in to use and click to explore them yourself.</p>
             <div class="feature-section">
                 <div class="scroll-indicator">&#x25BC;</div>
-                <div class="feature-container ">
+                <div class="feature-container blurred ">
                 <!-- Pair 1 -->
                 <div class="feature-pair">
                     <div class="feature" id="client-management">
@@ -367,7 +368,7 @@
     <div class="contact-content">
       <!-- Image Container -->
       <div class="contact-image-container">
-        <img src="images/CONTACTS.jpg" alt="Contact Us" class="contact-image">
+        <img src="images/CONTACTS.png" alt="Contact Us" class="contact-image">
       </div>
       <!-- Text Content Container -->
       <div class="text-content">

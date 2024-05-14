@@ -90,6 +90,10 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+
+
+// REGISTRATION
+
 window.onload = function() {
   // Get the modals
   var registerModal = document.getElementById("registerModal");

@@ -65,7 +65,7 @@ const authenticateJWT = (req, res, next) => {
 app.post('/register', [
     body('username').isLength({ min: 5 }).withMessage('Username must be at least 5 characters long'),
     body('email').isEmail().withMessage('Email is invalid'),
-    body('password').isLength({ min: 8 }).withMessage('Password must be at least 8 characters long'),
+    body('password').isLength({ min: 6 }).withMessage('Password must be at least 6 characters long'),
   ], async (req, res) => {
     const errors = validationResult(req);
     if (!errors.isEmpty()) {

@@ -117,22 +117,80 @@ h1, title {
     background-color: rgba(0,0,0,0.7);
   }
 
-.modal-content-l {
-    background-color: #d4ebef;;
-    margin: 15% auto; 
+  .modal-content-l, .modal-content {
+    background-color: #d4ebef;
     padding: 20px;
     border: 1px solid #888;
     border-radius: 20px;
-    width: 60%; 
-    text-align: left;
+    width: calc(80% - 40px); 
+    box-sizing: border-box; 
+    text-align: center;
+    margin: 5% auto; 
+    position: relative; 
+}
+
+input[type="submit"] {
+    width: calc(100% - 20px); 
+    box-sizing: border-box; 
+    padding: 10px 20px;
+    margin: 10px 10px 10px 10px; 
+    cursor: pointer; 
 }
 
 .close-l {
   color: #aaa;
-  float: right;
+  float: left;
   font-size: 28px;
   font-weight: bold;
 }
+
+input, button, .btn-submit {
+  margin: 10px 0;
+  width: 100%; 
+  box-sizing: border-box; 
+}
+
+.btn-submit {
+  float: none; 
+  display: block; 
+  margin: 10px auto; 
+  background-color: #99AABB;
+  border-radius: 15px;
+  border-color: rgb(153, 170, 187, 0.6);
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+
+}
+
+.btn-submit:hover {
+  background-color: #555;
+}
+
+input[type="text"], input[type="password"], input[type="email"] {
+  margin: 10px 0;
+  padding: 15px; 
+  font-size: 16px; 
+  width: 80%; 
+  box-sizing: border-box; /
+}
+
+#forgotPasswordLink {
+background-color: rgb(153, 170, 187, 0.6); 
+color: #555;
+padding: 3px 3px;
+border: none;
+border-radius: 5px;
+font-size: 13px;
+cursor: pointer;
+text-decoration: none; 
+}
+
+#forgotPasswordLink:hover {
+background-color: #4b445f;
+color: white;
+}
+
 
 .close-l:hover,
 .close-l:focus {
@@ -376,7 +434,6 @@ user-select: none;
 
 .title-section {
   background: rgba(188, 222, 228, 0.5); 
-  color: #000;
 }
 .scroll-container {
   display: flex;
@@ -550,6 +607,7 @@ user-select: none;
   display: flex;
   flex-direction: column;
   padding-right: 60px;
+  text-align: left;
 }
 
 .text-content h1 {
